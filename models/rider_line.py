@@ -1,26 +1,19 @@
 # -*- coding: utf-8 -*-
-
 """
 	Rider Line
 
  	Created: 				27 Oct 2018
  	Last mod: 				27 Oct 2018
 """
-
 from openerp import models, fields, api
-#from openerp import models, fields
 
 class RiderLine(models.Model):
 	"""
 	Rider
 	"""
 	_name = 'datascience.rider_line'
-
 	_order = 'name asc'
-
 	#_inherit=''
-
-
 
 
 # -------------------------------------------------- Handles --------------------------------------

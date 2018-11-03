@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 """
 	Rider
 
@@ -7,23 +6,16 @@
  	Last mod: 				27 Oct 2018
 
 """
-
 from openerp import models, fields, api
-
 import data_model
-
 
 class Rider(models.Model):
 	"""
 	Rider
 	"""
-
 	_name = 'datascience.rider'
-
 	_order = 'name asc'
-
 	#_inherit=''
-
 
 
 
@@ -37,7 +29,6 @@ class Rider(models.Model):
 		self.clear()
 
 
-		#p1 = data_model.Rider('1', 'dtra.csv')
 		p1 = data_model.Rider('1', self.file_name)
 
 
