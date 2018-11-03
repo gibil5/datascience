@@ -27,7 +27,6 @@ class Rider:
 
 
 	def __len__(self): 
-		#return len(self.count)
 		return len(self.data)
 
 

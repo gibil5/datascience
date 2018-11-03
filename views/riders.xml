@@ -58,10 +58,10 @@
 							
 							<group>               
 <!--
+								<field name="max_import"/>
 -->
 								<field name="file_name"/>
 
-								<field name="max_import"/>
 							</group>
 						</group>
 

@@ -8,6 +8,7 @@
 """
 from openerp import models, fields, api
 import data_model
+import os
 
 class Rider(models.Model):
 	"""
@@ -26,13 +27,23 @@ class Rider(models.Model):
 		print
 		print 'Import'
 
+
 		self.clear()
 
 
-		p1 = data_model.Rider('1', self.file_name)
+
+		# Init
+		base_dir = os.environ['HOME']
+		path = base_dir + "/challenge/" + self.file_name
+
+
+
+		#p1 = data_model.Rider('1', self.file_name)
+		p1 = data_model.Rider('1', path)
 
 
 		print p1
+		
 
 		self.count = len(p1)
 
@@ -79,9 +90,24 @@ class Rider(models.Model):
 
 
 
+
+# Fields
 # -------------------------------------------------------------------------------------------------
 
+	name = fields.Char(
+			"Name",
+			required=True,
+		)
+
+
+	date_begin = fields.Datetime()
+
+
+	date_end = fields.Datetime()
+
+
 	count = fields.Integer()
+
 
 
 	# Lines
@@ -103,22 +129,7 @@ class Rider(models.Model):
 		)
 
 	# Max
-	max_import = fields.Integer()
-
-
-
-
-
-
-	# RiderID
-	name = fields.Char(
-			"Name",
-		)
-
-	date_begin = fields.Datetime()
-
-	date_end = fields.Datetime()
-
+	#max_import = fields.Integer()
 
 
 
