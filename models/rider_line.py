@@ -43,11 +43,14 @@ class RiderLine(models.Model):
 			"Index",
 		)
 
+
+
 	date = fields.Date()
 
 	date_time = fields.Datetime()
 
-	time = fields.Datetime()
+	#time = fields.Datetime()
+	time = fields.Char()
 
 
 

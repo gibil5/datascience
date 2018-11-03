@@ -9,6 +9,7 @@
 from openerp import models, fields, api
 import data_model
 import os
+import lib
 
 class Rider(models.Model):
 	"""
@@ -47,16 +48,44 @@ class Rider(models.Model):
 
 		self.count = len(p1)
 
+
+		idx = 0 
+
 		for line in p1.data: 
 			
 			#print line
 
-			self.rider_line.create({
-										'name': 	line['RiderID'], 
-										'index':	line['Index'], 
-										'date': 	line['Date'], 
 
-										'date_time': 	line['Date'] + ' ' + line['Time'], 
+			date = line['Date'] + ' ' + line['Time']
+			
+			date_time, dt = lib.correct_date_delta(date, 5, 0, 0)
+
+			#time = dt.time()
+			#time = date_time.split()[1]
+			time = line['Time']
+
+			print time
+
+
+
+			self.rider_line.create({
+										'idx': 	idx, 
+
+
+										'name': 	line['RiderID'], 
+										'index':	line['Index'],
+
+
+
+										#'date_time': 	line['Date'] + ' ' + line['Time'], 
+										'date_time': 	date_time, 
+
+										#'date': 	line['Date'], 
+										'date': 	date_time, 
+
+										'time': 	time, 
+
+
 
 										'average_gradient': 	line['Average_Gradient'], 
 										'max_gradient': 		line['Max_Gradient'], 
@@ -77,7 +106,10 @@ class Rider(models.Model):
 
 
 										'rider_id': 	self.id, 
-				})
+			})
+
+			idx = idx + 1
+
 
 
 

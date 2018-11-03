@@ -529,28 +529,19 @@
 			}
 		},
 		{
-			"file": "models/__init__.py",
-			"settings":
-			{
-				"buffer_size": 91,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "models/rider.py",
 			"settings":
 			{
-				"buffer_size": 2266,
+				"buffer_size": 2620,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "models/data_model.py",
+			"file": "views/rider_lines.xml",
 			"settings":
 			{
-				"buffer_size": 854,
+				"buffer_size": 2437,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -565,45 +556,37 @@
 			}
 		},
 		{
+			"file": "models/lib.py",
+			"settings":
+			{
+				"buffer_size": 681,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "models/data_model.py",
+			"settings":
+			{
+				"buffer_size": 854,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/gibil/challenge/dtra.csv",
+			"settings":
+			{
+				"buffer_size": 9859,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "views/riders.xml",
 			"settings":
 			{
 				"buffer_size": 3787,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/rider_lines.xml",
-			"settings":
-			{
-				"buffer_size": 2393,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/menus.xml",
-			"settings":
-			{
-				"buffer_size": 937,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/views.xml",
-			"settings":
-			{
-				"buffer_size": 1843,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/templates.xml",
-			"settings":
-			{
-				"buffer_size": 789,
 				"line_ending": "Unix"
 			}
 		}
@@ -681,6 +664,10 @@
 	},
 	"file_history":
 	[
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/datascience/models/__init__.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/datascience/views/menus.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/datascience/views/templates.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/datascience/views/views.xml",
 		"/Users/gibil/Virtualenvs/data/challenge_31_data/data_model.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/datascience/models/models.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/datascience/models/rider.DEP.py",
@@ -804,15 +791,11 @@
 		"/Users/gibil/cellar/github/openhealth/models/object.py",
 		"/Users/gibil/cellar/github/openhealth/models/chk_product.py",
 		"/Users/gibil/cellar/github/openhealth/models/tst_patient.py",
-		"/Users/gibil/cellar/github/openhealth/models/gen.py",
-		"/Users/gibil/cellar/github/openhealth/models/partner.DEP.py",
-		"/Users/gibil/cellar/github/openhealth/models/product.DEP.py",
-		"/Users/gibil/cellar/github/openhealth/views/patients/patient_personal.xml",
-		"/Users/gibil/cellar/github/openhealth/models/prodvars.py"
+		"/Users/gibil/cellar/github/openhealth/models/gen.py"
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 25.0
 	},
 	"find_in_files":
 	{
@@ -826,6 +809,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"689",
 			"name = fields.",
 			"form",
 			"rider",
@@ -877,7 +861,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 68.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
@@ -885,19 +869,107 @@
 				},
 				{
 					"buffer": 1,
-					"file": "models/__init__.py",
+					"file": "models/rider.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 91,
+						"buffer_size": 2620,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								91,
-								91
+								1781,
+								1781
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1014.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "views/rider_lines.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								503,
+								503
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 130.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "models/rider_line.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1337,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								836,
+								844
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 704.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "models/lib.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								681,
+								681
 							]
 						],
 						"settings":
@@ -908,40 +980,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "models/rider.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2266,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								456,
-								456
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 225.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "models/data_model.py",
 					"semi_transient": false,
 					"settings":
@@ -963,43 +1006,42 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 9.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "models/rider_line.py",
+					"buffer": 6,
+					"file": "/Users/gibil/challenge/dtra.csv",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1337,
+						"buffer_size": 9859,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								188,
-								188
+								596,
+								601
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 112.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "views/riders.xml",
 					"semi_transient": false,
 					"settings":
@@ -1011,8 +1053,8 @@
 						"selection":
 						[
 							[
-								833,
-								833
+								912,
+								912
 							]
 						],
 						"settings":
@@ -1025,126 +1067,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "views/rider_lines.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2393,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								859,
-								859
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "views/menus.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 937,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								622,
-								622
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "views/views.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1843,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								70,
-								70
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "views/templates.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 789,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
