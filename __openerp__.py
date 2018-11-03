@@ -34,8 +34,9 @@
         #'views/views.xml',
         #'views/templates.xml',
 
-        'views/riders.xml',
-        'views/rider_lines.xml',
+
+        #'views/riders.xml',
+        #'views/rider_lines.xml',
         'views/menus.xml',
     ],
 
