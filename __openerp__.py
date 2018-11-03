@@ -31,14 +31,13 @@
     # always loaded
     'data': [
 
-        # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        #'views/views.xml',
+        #'views/templates.xml',
 
-        'views/riders.xml',
-        'views/rider_lines.xml',
+        #'views/riders.xml',
+        #'views/rider_lines.xml',
 
-        'views/menus.xml',
+        #'views/menus.xml',
     ],
 
 

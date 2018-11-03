@@ -2,6 +2,5 @@
 
 from . import models
 
-from . import rider
-
-from . import rider_line
+#from . import rider
+#from . import rider_line
