@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+
+
+<!--
+					groups="openhealth.roots"
+-->
+<!-- DataScience -->
+		<menuitem 	id="main_datascience_menu" 
+
+					sequence="1"
+
+					name="DataScience"
+			/>
+
+
+
+<!-- Challenge 31 -->
+		<menuitem 	id="datascience_challenge31_menu" 
+					
+					parent="main_datascience_menu"
+
+					sequence="1"
+
+					name="Riders"
+				/>
+
+
+		<!-- Riders --> 
+		<menuitem id="datascience_rider_menu" 
+
+					name="Riders" 
+			
+					parent="datascience_challenge31_menu"
+
+					action="rider_action_window"
+			/>
+
+		<!-- Rider Lines --> 
+		<menuitem id="datascience_rider_line_menu" 
+
+					name="Rider Lines" 
+			
+					parent="datascience_challenge31_menu"
+
+					action="rider_line_action_window"
+			/>
+
+
+
+		<!-- Containers --> 
+<!--		
+		<menuitem id="datascience_container_menu" 
+
+					name="Containers" 
+			
+					parent="datascience_challenge31_menu"
+
+					action="contaoiner_action_window"
+			/>
+-->
+
+
+	</data>
+</openerp>

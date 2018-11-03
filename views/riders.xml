@@ -1,0 +1,205 @@
+<openerp>
+	<data>
+
+
+
+
+
+<!-- FORM --> 
+		<record model="ir.ui.view" id="rider_form_view">
+
+			<field name="name">rider.form</field>
+
+			<field name="model">datascience.rider</field>
+			
+			<field name="priority" eval="1"/>
+
+			<field name="arch" type="xml">
+			
+				<form string="rider Form">
+			
+			
+					<header>
+
+						<!-- Import --> 
+						<button 
+							type="object" 
+							class="oe_highlight"
+							
+							name="import_data" 
+							
+							string="Import Data"                 
+						/>
+
+
+
+						<!-- Clear --> 
+						<button 
+							type="object" 
+							class="oe_highlight oe_right"
+
+							name="clear"              
+							
+							string="Clear"                
+						/>
+
+					</header>
+
+
+
+
+					<!-- Sheet -->  
+					<sheet>
+
+						<group>
+							<group>               
+								<field name="name"/>
+							</group>
+							
+							<group>               
+<!--
+-->
+								<field name="file_name"/>
+
+								<field name="max_import"/>
+							</group>
+						</group>
+
+						<group>
+							<group>               
+								<field name="date_begin"/>
+								<field name="date_end"/>
+							</group>
+							<group>
+<!--
+-->
+								<field name="count"/>
+							</group>
+						</group>
+
+
+						<!-- Padding -->
+						<group>
+							<group></group>
+							<group></group>
+						</group>
+
+
+
+
+						<!-- Notebook --> 
+						<notebook>
+							
+							<page string="Lines">
+<!--
+-->						
+								<field name="rider_line"/>
+							</page>
+
+
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<!-- FORM --> 
+
+
+
+
+
+
+
+
+		<!-- explicit list view definition -->
+		<record model="ir.ui.view" id="datascience.rider_list">
+			<field name="name">Rider list</field>
+			<field name="model">datascience.rider</field>
+			<field name="arch" type="xml">
+				<tree>
+
+					<field name="name"/>
+
+					<field name="date_begin"/>        
+					
+					<field name="date_end"/>        
+
+<!--
+					<field name="index"/>
+
+					<field name="date"/>        
+					<field name="date_time"/>
+					<field name="time"/>
+
+
+					<field name="average_gradient"/>
+					<field name="max_gradient"/>
+					<field name="distance"/>
+
+
+					<field name="highest_point"/>
+					<field name="lowest_point"/>
+					<field name="measured_time"/>
+
+
+					<field name="moving_time"/>
+					<field name="average_heart_rate"/>
+					<field name="max_heart_rate"/>
+
+
+					<field name="speed"/>
+					<field name="power"/>
+					<field name="cadence"/>
+-->
+
+<!--        
+					<field name="time"/>
+-->
+				</tree>
+			</field>
+		</record>
+
+
+
+		<!-- actions opening views on models -->
+		<record model="ir.actions.act_window" id="datascience.rider_action_window">
+			<field name="name">Rider window</field>
+			<field name="res_model">datascience.rider</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+
+		<!-- server action to the one above -->
+		<!--
+		<record model="ir.actions.server" id="datascience.action_server">
+			<field name="name">datascience server</field>
+			<field name="model_id" ref="model_datascience_datascience"/>
+			<field name="code">
+				action = {
+					"type": "ir.actions.act_window",
+					"view_mode": "tree,form",
+					"res_model": self._name,
+				}
+			</field>
+		</record>
+		-->
+
+		<!-- Top menu item -->
+		<!--
+		<menuitem name="datascience" id="datascience.menu_root"/>
+		-->
+		<!-- menu categories -->
+		<!--
+		<menuitem name="Menu 1" id="datascience.menu_1" parent="datascience.menu_root"/>
+		<menuitem name="Menu 2" id="datascience.menu_2" parent="datascience.menu_root"/>
+		-->
+		<!-- actions -->
+		<!--
+		<menuitem name="List" id="datascience.menu_1_list" parent="datascience.menu_1"
+							action="datascience.action_window"/>
+		<menuitem name="Server to list" id="datascience" parent="datascience.menu_2"
+							action="datascience.action_server"/>
+		-->
+	</data>
+</openerp>
